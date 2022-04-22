@@ -1,6 +1,10 @@
+<<<<<<< HEAD
 # Project2--Suicide-data-Visualization
 
 Meet the Team 5: Michael Lapiana, Margot Rudy, Shreyansh Saraiya, and Jenny Yang
+=======
+# Suicide-data-Visualization
+>>>>>>> f9fb12b751df449a748981ba37238bad0520d504
 
 # Objective
 
@@ -40,7 +44,12 @@ FILES INCLUDED IN THE REPO: 2 JUPYTER NOTEBOOKS - ETL (FOR DATA TRANSFORMATION A
 
 6. Open browser and type the Flask (port name) server name to view the site.
 
+<<<<<<< HEAD
 # To run the the dashboard properly, you must first enter the year, then click which country you would like the data from.
+=======
+## **To run the the dashboard properly, you must first enter the year, then click which country you would like the data from.
+
+>>>>>>> f9fb12b751df449a748981ba37238bad0520d504
 
 
 
