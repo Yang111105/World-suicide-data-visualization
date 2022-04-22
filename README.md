@@ -9,8 +9,6 @@ Suicide Data Visualization Death by suicide is sensitive topic that causes pain 
 
 Dataset: https://www.kaggle.com/russellyates88/suicide-rates-overview-1985-to-2016?select=master.csv datasize: 2.71MB https://raw.githubusercontent.com/datasets/geo-countries/master/data/countries.geojson
 
-Link of Repo: https://github.com/mlapiana/Project-2-Suicide-data-visualization
-
 # Project Content
 Our project contains a website with several views of our data.. 
 1.  Suicide Chloropleth Map to control the dashboard by year and country with handle clicks which changes all views. The views include a bubble chart for Suicides by Age, and pie charts for Gender and Generation for selected Country/Year. 
