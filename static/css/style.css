@@ -100,3 +100,22 @@ img.img-fluid:hover {
 h1 {
   text-align: center;
 }
+
+.tooltip {
+  position: absolute;
+  width: 150px;
+  height: 70px;
+  padding: 10px;
+  font: 12px sans-serif;
+  text-align: center;
+  color: rgb(24, 23, 23);
+  background: rgb(201, 201, 206);
+  border: 0;
+  border-radius: 10px;
+}
+
+.line {
+  fill: none;
+  stroke: rgb(94, 106, 148);
+  stroke-width: 2px;
+}

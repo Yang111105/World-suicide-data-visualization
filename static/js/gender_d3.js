@@ -8,13 +8,13 @@ function plotPie(labels, values){
     var layout = {
         width: 600,
         height: 600,
-        title:'Suicides by Gender'
+        title:'2002-2015 World Suicides by Gender'
     }
     var config = {responsive: true}
     Plotly.newPlot('pie_gender', [trace], layout, config);
 }
 
-for (var i = 1985; i < 2017; ++i) {
+for (var i = 2002; i < 2016; ++i) {
     var option = "<option value='" + i + "'>" + i + "</option>";
     $("#selectYear").append(option);
 }
@@ -85,7 +85,7 @@ d3.json('/api/yearly_suicides_by_gender').then(function(data){
     
     var layout = {
         barmode: 'group',
-        title: 'Suicides by Gender <br> from 1985 to 2016'
+        title: '2002-2015 World Suicides by Gender'
     };
     
     Plotly.newPlot('line_gender', data, layout);

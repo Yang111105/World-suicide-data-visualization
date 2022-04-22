@@ -51,11 +51,28 @@ def byAge():
     #"""Return the homepage."""
     return render_template("byAge.html")
 
-@app.route("/map")
-def map():
+@app.route("/trend_gdp")
+def trend_gdp():
     #"""Return the homepage."""
-    return render_template("map.html")
+    return render_template("trend_gdp.html")
 
+
+@app.route("/api/yearly_suicide_rate")
+def yearly_suicide_rate():
+    # Create our session (link) from Python to the DB
+    session = Session(engine)
+
+    results = engine.execute("SELECT year, SUM(suicides_no) AS suicides, SUM(population) AS population FROM suicidedata GROUP BY year;")
+    
+    yearly_suicide_rate = []
+    for result in results:
+        yearly_suicide_rate.append({
+            'year': result['year'],
+            'yearly_suicide_rate': round(float(result['suicides'])/float(result['population'])*100000,2)
+        })
+    session.close()
+    yearly_suicide_rate = sorted(yearly_suicide_rate, key=lambda x: x['year'])
+    return jsonify(yearly_suicide_rate)
 
 @app.route("/api/suicides_by_country")
 def suicides_by_country():

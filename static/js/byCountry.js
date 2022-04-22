@@ -22,7 +22,7 @@
     },
   ];
   var layout = {
-      title: "Countries with the highest suicide rates",
+      title: "2002-2015 World Countries with Highest Suicide Rates",
       autosize: false,
       width: 600,
       height: 600,
@@ -59,7 +59,7 @@ d3.json('/api/suicides_by_country').then(function(data){
     }
   ];
   var layout = {
-      title: "Suicides by Country",
+      title: "2002-2015 World Suicide Numbers by Country",
       autosize: false,
       width: 800,
       height: 500,
