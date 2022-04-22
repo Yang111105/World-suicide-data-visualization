@@ -1,0 +1,102 @@
+/* body */
+body {
+    background-color: lightgrey;
+    font-family: sans-serif;
+}
+
+.navbar:hover{
+    background-color:rgb(231, 231, 231);
+}
+/* 
+.navbar-brand:hover {
+    color:rgb(0,0,0);
+} */
+
+.exp-container {
+    background-color: white;
+    padding: 20px ;
+    margin: 30px 85px 50px 85px;
+    display: block;
+} 
+
+/* main container to store the visualizations and explanation */
+.container {
+    background-color: white;
+    padding: 20px ;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: block;
+} 
+
+/* top container to store the 7 visualization from which use can choose */
+.top-container {
+    background-color: white;
+    height: 250px;
+    padding: 10px ;
+    position: initial;
+    bottom: 30px;
+    display: block
+}
+
+.top-container .row {
+    margin-left: 50px;
+    margin-right:50px;
+}
+
+/* Analysis on the visualization */
+.analysis {
+    margin-top: 7rem;
+    margin-bottom: 1rem;
+    margin-left: 4rem;
+    align-self: center;
+}
+/* Images of the charts in the top-container */
+img {
+    width: 200px;
+    max-height:300px;
+    align-items: center;
+}
+img.img-fluid:hover {
+    border: 1px dotted blue;
+}
+
+/* Height setting for the map*/
+#map { height: 600px; }
+
+/* CSS from the Leaflet-Choropleth documentation */
+.legend {
+  padding: 6px 8px;
+  font: 12px Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  color: #555;
+  background: #fff;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 5px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.legend ul {
+  padding: 0;
+  margin: 0;
+  clear: both;
+  list-style-type: none;
+}
+
+.legend li {
+  display: inline-block;
+  width: 30px;
+  height: 22px;
+}
+
+.legend .min {
+  float: left;
+  padding-bottom: 5px;
+}
+
+.legend .max {
+  float: right;
+}
+
+h1 {
+  text-align: center;
+}

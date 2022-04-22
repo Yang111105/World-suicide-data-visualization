@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" 
+  integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <!-- local CSS -->
+  <link rel="stylesheet" type="text/css" href="../static/css/style.css">
+  <title>Suicide rates analysis</title>
+ 
+</head>
+<body>
+  <div class="wrapper">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+      <a class="navbar-brand" href="/">Suicide Analysis Dashboard</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav ml-auto">
+              <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Plots
+              </a>
+              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
+                  <a class="dropdown-item" href="gender">Suicides By Gender</a>
+                  <a class="dropdown-item" href="generation">Suicides By Generation</a>
+                  <a class="dropdown-item" href="byAge">Suicides By Age</a>
+                  <a class="dropdown-item" href="byCountry">Suicides By Country</a>
+              </div>
+              </li>
+
+              
+          </ul>
+      </div>
+    </nav>
+
+  <div class="container">
+    <h3> Suicides by Gender </h3>
+    <hr>
+    <div class="row">
+      <div class="col-7" id="figure1">
+        
+        <form class="form-inline">
+          <div class="form-group mx-sm-3 mb-2">
+            <label for="selectYear" class="sr-only">Select Year</label>
+            <select class="custom-select" name="year" id="selectYear">
+            </select>
+          </div>
+          <button type="submit" class="btn btn-primary mb-2">Select</button>
+        </form>
+
+        <div id="pie_gender"></div>
+      </div>
+      <div class="col-5">
+        <p class = "analysis">
+          Suicide is more common in men than women. Suicides in men are four times higher than in women. 
+          <br><br>The difference can be seen in the bar chart as well. The gap was small in the first four years, but the gap grew and remained stable after that. 
+        </p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12">
+        <div id="line_gender"></div>
+      </div>
+    </div>
+  </div>
+    
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" 
+  integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" 
+  integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" 
+  integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+  <!-- D3.js CDN -->
+  <script src="https://d3js.org/d3.v5.min.js"></script>
+  <!--Plotly JS-->
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  <script src="../static/js/gender_d3.js"></script>
+</body>
+</html>
