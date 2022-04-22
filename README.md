@@ -1,6 +1,4 @@
-# Project2--Suicide-data-Visualization
-
-Meet the Team 5: Michael Lapiana, Margot Rudy, Shreyansh Saraiya, and Jenny Yang
+# Suicide-data-Visualization
 
 # Objective
 
