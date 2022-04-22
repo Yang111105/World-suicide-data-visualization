@@ -38,7 +38,7 @@ FILES INCLUDED IN THE REPO: 2 JUPYTER NOTEBOOKS - ETL (FOR DATA TRANSFORMATION A
 
 6. Open browser and type the Flask (port name) server name to view the site.
 
-# To run the the dashboard properly, you must first enter the year, then click which country you would like the data from.
+## **To run the the dashboard properly, you must first enter the year, then click which country you would like the data from.
 
 
 
