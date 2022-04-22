@@ -13,7 +13,7 @@ Dataset: https://www.kaggle.com/russellyates88/suicide-rates-overview-1985-to-20
 The project contains a website with several views of the data. 
 1.  Suicide Chloropleth Map to control the dashboard by year and country with handle clicks which changes all views. The views include a bubble chart for Suicides by Age, and pie charts for Gender and Generation for selected Country/Year
 
-2.A trend line chart page 
+2. A trend line chart page 
 
 3. The individual plot pages contain detailed by Age, Gender, Generation and Country
 
