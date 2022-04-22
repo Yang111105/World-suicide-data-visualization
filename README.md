@@ -10,14 +10,14 @@ Suicide Data Visualization Death by suicide is sensitive topic that causes pain 
 Dataset: https://www.kaggle.com/russellyates88/suicide-rates-overview-1985-to-2016?select=master.csv datasize: 2.71MB https://raw.githubusercontent.com/datasets/geo-countries/master/data/countries.geojson
 
 # Project Content
-Our project contains a website with several views of our data.. 
-1.  Suicide Chloropleth Map to control the dashboard by year and country with handle clicks which changes all views. The views include a bubble chart for Suicides by Age, and pie charts for Gender and Generation for selected Country/Year. 
+The project contains a website with several views of the data. 
+1.  Suicide Chloropleth Map to control the dashboard by year and country with handle clicks which changes all views. The views include a bubble chart for Suicides by Age, and pie charts for Gender and Generation for selected Country/Year
 
-2. There is also a line chart that acts as a trend page. 
+2.A trend line chart page 
 
-3. The individual plot pages contain detailed by Age, Gender, Generation and Country. 
+3. The individual plot pages contain detailed by Age, Gender, Generation and Country
 
-4. Our project utilizes a Flask server to pull data from  PostgresSQL database and generate API endpoints to return the information to the website. The JavaScript library that we did not cover in class was JQuery, which helped create our Bubble Chart.
+4. The project utilizes a Flask server to pull data from  PostgresSQL database and generate API endpoints to return the information to the website. The JavaScript library that we did not cover in class was JQuery, which helped create our Bubble Chart.
 
 FILES INCLUDED IN THE REPO: 2 JUPYTER NOTEBOOKS - ETL (FOR DATA TRANSFORMATION AND GENERATING DATABASE), GEOJSON MODIFICATION- GENERATE GEOJSON THAT FEEDS INFO TO THE MAP, Query.sql to assign primary key to table, APP.PY - RETURN FLASK SERVER TO RETURN THE VIEWS, TEMPLATE FOLDER- 5 HTMLS- to make each page, JSon Files- 8 to generate content in the web for each webpage, and CSS- file for styling
 
